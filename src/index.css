@@ -1,13 +1,15 @@
+/* These three lines are Tailwind's "directives" — they're like import statements
+   that tell PostCSS to inject Tailwind's base reset styles, component styles,
+   and utility classes (like bg-blue-500, flex, p-4, etc.) into this file. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Keep the custom font stack from the original CRA setup */
 body {
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
